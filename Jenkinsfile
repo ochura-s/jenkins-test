@@ -5,7 +5,7 @@ pipeline {
         stage('Check Environment') {
             steps {
                 sh 'java -version'
-                sh 'os-release'
+                sh 'cat /etc/os-release'
             }
         }
         stage('Install Apache') {
