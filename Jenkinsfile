@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy Webpage') {
             steps {
-                sh 'echo "<h1>Hello from Jenkins on Rocky Linux!</h1>" | sudo tee /var/www/html/index.html'
+                sh 'echo "<h1>Hello from Jenkins on Rocky Linux 111!</h1>" | sudo tee /var/www/html/index.html'
             }
         }
         stage('Check Logs for HTTP Errors') {
